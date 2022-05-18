@@ -7,6 +7,7 @@
 body{
     font-family: Playfair Display;
     Font: Montserrat;
+    font-family: Montserrat;
 }
 span{
     color: #fff;
@@ -14,44 +15,49 @@ span{
     border-radius: 8px;
     background-color: orangered;
     padding: 9px;
+    width:  30px;
  
 }
 .first_section{
     margin-left: 40px; 
 }
 .section2{
-    margin-left: 40px; 
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column; 
 }
-.section2,span{
-    margin-right: 30px;
-    font-family: Montserrat;
-
+ 
+.section2 p h3{
+    margin-left: 40px;
+      
 }
-.section2 ,p{
-    align-items: center;
+.section2 p{
+    margin-left: 50px;
+    margin-top: -30px; 
     
 }
-.container{
+/* .container{
     grid-template-areas: 
     'showcase showcase'
     'top-box-a top-box-b';
-}
+} */
 
-@media (max-width:500px) {
-    .container{
-        grid-template-areas: 
-        'first_section'
-        'setion2'
-        'cake'
-        ;
-    }   
-}
 /* @media(max-width:700px) {
     .container{
         grid-template-areas: 
         'first_section'
         'section2';
     }
-} */
+}  */
+
+@media (max-width:400px) {
+    img{
+        grid-template-areas: 
+        'first_section'
+        'setion2'
+        ;
+    }   
+}
+
 
 
